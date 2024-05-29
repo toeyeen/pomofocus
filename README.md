@@ -1,75 +1,36 @@
-# Nuxt 3 Minimal Starter
+# Pomodoro Technique
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a time management technique, It helps you stay away from distraction. How is this done?
+The technique basically helps you focus on work that need to be done in intervals, typically 25 mins of focus and 5 mins of distraction. Most times this is done in part of four i.e 25 mins focus 5 mins distraction
+120 mins in total before going for a longer 15 mins break.
 
-## Setup
+The goal of the technique is to reduce the effect of internal and external interruptions on focus and flow.
 
-Make sure to install the dependencies:
+[Live Demo](https://toyinjolaoso.vercel.app/) (built with Nuxt and Supabase)
 
-```bash
-# npm
-npm install
+## Features
 
-# pnpm
-pnpm install
+- Soundscapes (Acoustic environment sounds) and editting to preference.
+- Edit focus time and break time.
+- Simple Todo List.
+- Beautiful soothing image sceneries.
 
-# yarn
-yarn install
+## Flow
 
-# bun
-bun install
-```
+  1. Decide on the task that needs to be done
+  2. Set your timer
+  3. Work and concentrate on the task.
+  4. End work while the timer goes off and take your short break.
+  5. Go back to step 2 and until your four pomodoros.
+  6. After your four pomodoro has been done, take a long break typically 15-30 mins. Once this break is done return to step 2.
 
-## Development Server
+## Credits
 
-Start the development server on `http://localhost:3000`:
+Inspired by
 
-```bash
-# npm
-npm run dev
+- [Pomofocus](https://pomofocus.io/) by [Yuya uzu](https://github.com/uzura89)
+- [Momentum](https://momentumdash.com/)
 
-# pnpm
-pnpm run dev
+## License
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+MIT

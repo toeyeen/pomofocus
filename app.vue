@@ -1,5 +1,9 @@
 <template>
-    Begining of the app
+   
+   <NuxtLayout>
+      <Main />
+   </NuxtLayout>
+  <NuxtPage />
 </template>
 
 <script setup lang="ts">
