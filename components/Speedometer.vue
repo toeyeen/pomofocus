@@ -16,16 +16,16 @@
 
   <div class="text">
 
-    <div class="flex items-center justify-center border px-8 border-1  text-center ">
-      <div class="focus px-2">Focus</div>
-      <div class="break">Break</div>
+    <div class="flex items-center justify-center border px-8 border-1  text-center my-4 ">
+      <div class="focus mx-8">Focus</div>
+      <div class="break mx-8">Break</div>
     </div>
 
-    <span class="title block">{{ title }}</span>
+    <span class="title block my-4">{{ title }}</span>
 
 
     
-    <button> Start </button>
+    <button class="my-4"> Start </button>
   </div>
 
 
