@@ -1,6 +1,11 @@
 <template>
   <div>
-    Header goes here
+
+    <UIcon name="i-ph-brain" dynamic />
+    <UIcon name="i-carbon-play" dynamic />
+
+    <span>Focusing</span>
+
   </div>
 </template>
 
@@ -8,6 +13,4 @@
 
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

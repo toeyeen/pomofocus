@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <Header class="header" />
-    <div class="main">
+    <div class="main overflow-scroll">
       <slot />
     </div>
     <Footer class="footer" />
@@ -12,4 +12,3 @@
 
 <script setup lang="ts">
 </script>
-
