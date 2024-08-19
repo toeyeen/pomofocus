@@ -1,10 +1,21 @@
 <template>
-  <div>
+  <div class="inline-flex gap-3   ">
+    <div class="text-white">
+      <UIcon name="i-ph-brain" class="text-2xl" dynamic />
+    </div>
+    <div class="text-white">
+      <UPopover :popper="{ arrow: true }">
+        <UIcon name="i-ph-waveform" class="text-2xl" dynamic />
+        <template #panel>
+          <div class=" p-4">
+            <SoundScape name="Soundscapes" class="w-80" />
+          </div>
+        </template>
+      </UPopover>
 
-    <UIcon name="i-ph-brain" dynamic />
-    <UIcon name="i-carbon-play" dynamic />
+    </div>
 
-    <span>Focusing</span>
+    <span class="text-white">Focusing</span>
 
   </div>
 </template>

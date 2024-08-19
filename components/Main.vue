@@ -2,7 +2,7 @@
 import type { FocusState } from '~/types'
 
 const minutes = ref(25)
-const { controls, options, percentage } = useControls(minutes.value)
+const { controls, options, percentage, intervals } = useControls(minutes.value)
 const controller = controls()
 
 
@@ -22,12 +22,14 @@ function changeMode(state: FocusState) {
         <div id="focus" class="h-full mb-[99px] flex justify-center text-center items-center">
           <div class="">
 
+            {{ intervals }}
+
             <Speedometer :controls="controller" :options="options" :percentage="percentage" />
+            <!-- <audio id="alarm" src="/assets/sounds/alarm.mp3" preload="auto"></audio> -->
+
           </div>
         </div>
       </div>
-
-
 
     </div>
   </div>
