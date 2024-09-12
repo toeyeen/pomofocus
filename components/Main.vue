@@ -5,6 +5,13 @@ const minutes = ref(25)
 const { controls, options, percentage, intervals } = useControls(minutes.value)
 const controller = controls()
 
+const refNull = ref(null)
+
+const sound = useSoundScape(refNull);
+
+
+const tunde = sound.getSoundScape
+
 
 function changeMode(state: FocusState) {
   minutes.value = state === 'focusMode' ? 12 : state === 'shortBreak' ? 5 : 15
@@ -18,6 +25,8 @@ function changeMode(state: FocusState) {
     <div class="h-full w-full mx-auto ">
 
       <div>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, consectetur.</p>
+        {{ tunde }}
 
         <div id="focus" class="h-full mb-[99px] flex justify-center text-center items-center">
           <div class="">
