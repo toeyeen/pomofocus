@@ -2,7 +2,12 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nanami: ['Nanami-Book', 'sans-serif'],
+        century: ['Century-Gothic', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }

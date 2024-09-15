@@ -1,15 +1,25 @@
+@import url('./font.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 
+@layer components {
+  .center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+
+}
+
 body {
-  background: url('assets/images/bg.jpg');
+  font-family: "Century-Gothic", sans-serif;
+  background: url('https://images.unsplash.com/photo-1563823856120-88d1fe6b75bc?ixlib=rb-1.2.1&q=99&fm=jpg&crop=entropy&cs=tinysrgb&w=2048&fit=max&ixid=eyJhcHBfaWQiOjcwOTV9?momo_cache_bg_uuid=dca35f44-b9b6-4342-924a-0d4bb6ad9762&quot');
+  /* background: url('assets/images/bg.jpg'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   /* height: 100%; */
 
 }

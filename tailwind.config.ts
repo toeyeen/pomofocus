@@ -9,7 +9,12 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nanami: ['Nanami-Book', 'sans-serif'],
+        centuryGothic: ['CenturyGothic', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 };
