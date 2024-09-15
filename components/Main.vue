@@ -1,41 +1,39 @@
 <script setup lang="ts">
 import type { FocusState } from '~/types'
+storeToRefs
 
 const minutes = ref(25)
-const { controls, options, percentage, intervals } = useControls(minutes.value)
-const controller = controls()
+const pomodoroStore = usePomodoroStore()
+
+const { percentage, intervals, settings } = storeToRefs(pomodoroStore)
+
+
+const options = {
+  ...pomodoroStore.options(),
+  initialTime: pomodoroStore.options().initialTime
+};
+
+const controller = pomodoroStore.controls()
 
 const refNull = ref(null)
 
 const sound = useSoundScape(refNull);
 
 
-const tunde = sound.getSoundScape
 
 
 function changeMode(state: FocusState) {
   minutes.value = state === 'focusMode' ? 12 : state === 'shortBreak' ? 5 : 15
-
-  console.log(minutes.value);
 }
 
 </script>
 <template>
-  <div class="glass">
+  <div class="glass text-white">
     <div class="h-full w-full mx-auto ">
-
       <div>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, consectetur.</p>
-        {{ tunde }}
-
         <div id="focus" class="h-full mb-[99px] flex justify-center text-center items-center">
           <div class="">
-
-            {{ intervals }}
-
             <Speedometer :controls="controller" :options="options" :percentage="percentage" />
-            <!-- <audio id="alarm" src="/assets/sounds/alarm.mp3" preload="auto"></audio> -->
-
           </div>
         </div>
       </div>
@@ -89,12 +87,11 @@ function changeMode(state: FocusState) {
 }
 
 .glass {
-  /* From https://css.glass */
-  margin: 20px 20px;
-  /* background: rgba(255, 255, 255, 0.19); */
+  /* margin: 20px 20px;
+  background: rgba(255, 255, 255, 0.19);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(1.3px);
-  /* border: 1px solid rgba(12, 255, 255, 0.9); */
+  border: 1px solid rgba(12, 255, 255, 0.9); */
 }
 </style>

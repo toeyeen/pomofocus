@@ -21,5 +21,5 @@ export interface AudioManager {
   audio: (action: 'play' | 'pause') => void
   setTracks: (soundScape: SoundScape) => void
   audioState: Ref<AudioState>
-  masterVolume: number | Ref<number>
+  masterVolume: Ref<number>
 }

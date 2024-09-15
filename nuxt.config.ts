@@ -3,7 +3,10 @@ export default defineNuxtConfig({
   devtools: { enabled: false, },
 
   modules: [
-    '@nuxt/ui', '@pinia/nuxt', '@vueuse/nuxt',
+    '@nuxt/ui',
+    '@pinia/nuxt',
+    '@vueuse/nuxt',
+    // '@nuxt/fonts',
   ],
 
   pinia: {
