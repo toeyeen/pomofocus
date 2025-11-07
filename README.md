@@ -11,6 +11,9 @@ The goal of the technique is to reduce the effect of internal and external inter
 ## Features
 
 - Soundscapes (Acoustic environment sounds) and editting to preference.
+- Full Focus mode by blocking away distracting notification from browser's tab.
+- Customizable personal time interval based of an individual.
+- Reminder after 8 successful cycle to check focus time.
 - Edit focus time and break time.
 - Simple Todo List.
 - Beautiful soothing image sceneries.

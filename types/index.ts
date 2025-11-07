@@ -1,3 +1,4 @@
+
 export type TimerState = 'running' | 'paused' | 'stopped'
 export type FocusState = 'focusMode' | 'shortBreak' | 'longBreak'
 export type View = 'home' | 'primary'
